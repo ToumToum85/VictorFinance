@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculatrice d'épargne | Victor Moreno</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <img src="logo-arbre.png" alt="Logo Victor Moreno" class="brand-logo">
+      <div class="brand-text">
+        <div class="name">Victor Moreno</div>
+        <div class="tag">Conseiller en sécurité financière<br>autonome & indépendant</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="planification.html">Planification</a></li>
+        <li><a href="calculatrice.html" class="active">Calculatrice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <a href="contact.html" class="btn btn-primary">Prendre rendez-vous</a>
+      <div class="burger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+
+<section style="padding:170px 0 50px;border-bottom:1px solid var(--line);">
+  <div class="wrap section-head center" style="max-width:700px;">
+    <span class="eyebrow">Outil gratuit</span>
+    <h2 style="margin-top:14px;font-size:44px;">Calculatrice <em>d'épargne</em></h2>
+    <p style="color:var(--grey);margin-top:18px;font-size:16px;font-weight:300;">Estimez la croissance de votre épargne dans le temps. Ajustez les paramètres ci-dessous pour voir l'impact sur votre avenir financier.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="calc-panel">
+      <div class="calc-inputs">
+        <div class="calc-field">
+          <label>Épargne actuelle <span class="val" id="valMontantInitial">10 000 $</span></label>
+          <input type="range" id="montantInitial" min="0" max="200000" step="500" value="10000">
+          <div class="sub">Montant que vous avez déjà accumulé aujourd'hui.</div>
+        </div>
+        <div class="calc-field">
+          <label>Cotisation mensuelle <span class="val" id="valCotisation">300 $</span></label>
+          <input type="range" id="cotisation" min="0" max="3000" step="25" value="300">
+          <div class="sub">Montant que vous prévoyez épargner chaque mois.</div>
+        </div>
+        <div class="calc-field">
+          <label>Taux de rendement annuel <span class="val" id="valTaux">5,0 %</span></label>
+          <input type="range" id="taux" min="0" max="12" step="0.1" value="5">
+          <div class="sub">Rendement moyen espéré de vos placements, par année.</div>
+        </div>
+        <div class="calc-field">
+          <label>Nombre d'années <span class="val" id="valAnnees">20 ans</span></label>
+          <input type="range" id="annees" min="1" max="40" step="1" value="20">
+          <div class="sub">Horizon de temps avant d'utiliser cette épargne.</div>
+        </div>
+        <p class="calc-disclaimer">Cet outil fournit une estimation à titre indicatif seulement, basée sur un taux de rendement constant et des cotisations régulières. Il ne constitue pas un conseil financier. Pour un plan personnalisé, prenons rendez-vous.</p>
+      </div>
+
+      <div class="calc-results">
+        <div class="calc-hero-stat">
+          <div class="l">Valeur future estimée</div>
+          <div class="n" id="resFinal">0 $</div>
+        </div>
+        <div class="calc-mini-grid">
+          <div class="calc-mini">
+            <div class="l">Total cotisé</div>
+            <div class="n" id="resCotise">0 $</div>
+          </div>
+          <div class="calc-mini">
+            <div class="l">Intérêts gagnés</div>
+            <div class="n" id="resInterets">0 $</div>
+          </div>
+        </div>
+
+        <div class="calc-chart">
+          <div class="calc-chart-legend">
+            <span><span class="sw" style="background:var(--gold);"></span>Capital cotisé</span>
+            <span><span class="sw" style="background:var(--gold-light);opacity:0.5;"></span>Intérêts composés</span>
+          </div>
+          <svg id="chartSvg" viewBox="0 0 500 220" style="width:100%;height:auto;"></svg>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary" style="align-self:flex-start;">Discuter de ma stratégie d'épargne</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h3>Envie d'aller plus loin ?</h3>
+        <p>Cette estimation n'est qu'un point de départ — bâtissons ensemble votre vrai plan d'épargne.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Prendre rendez-vous</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand" style="margin-bottom:0;">
+          <img src="logo-arbre.png" alt="Logo Victor Moreno" class="brand-logo">
+          <div class="brand-text"><div class="name">Victor Moreno</div><div class="tag">Conseiller en sécurité financière<br>autonome & indépendant</div></div>
+        </div>
+        <p>Des racines solides pour construire votre avenir financier, en toute confiance.</p>
+        <div class="socials">
+          <a href="#">in</a><a href="#">f</a><a href="#">◎</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Liens rapides</h4>
+        <ul><li><a href="index.html">Accueil</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul><li><a href="services.html">Assurance</a></li><li><a href="services.html">Placements</a></li><li><a href="services.html">Hypothèque</a></li><li><a href="services.html">Retraite</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Mentions légales</h4>
+        <ul><li><a href="#">Politique de confidentialité</a></li><li><a href="#">Conditions d'utilisation</a></li><li><a href="#">Divulgations</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Victor Moreno — Conseiller en sécurité financière autonome & indépendant. Tous droits réservés.</span>
+      <span>Site conçu avec soin.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+(function(){
+  const fmt = n => new Intl.NumberFormat('fr-CA', { style:'currency', currency:'CAD', maximumFractionDigits:0 }).format(n);
+
+  const elMontant = document.getElementById('montantInitial');
+  const elCotis = document.getElementById('cotisation');
+  const elTaux = document.getElementById('taux');
+  const elAnnees = document.getElementById('annees');
+
+  const valMontant = document.getElementById('valMontantInitial');
+  const valCotis = document.getElementById('valCotisation');
+  const valTaux = document.getElementById('valTaux');
+  const valAnnees = document.getElementById('valAnnees');
+
+  const resFinal = document.getElementById('resFinal');
+  const resCotise = document.getElementById('resCotise');
+  const resInterets = document.getElementById('resInterets');
+  const chartSvg = document.getElementById('chartSvg');
+
+  function computeSeries(){
+    const P0 = parseFloat(elMontant.value);
+    const monthly = parseFloat(elCotis.value);
+    const annualRate = parseFloat(elTaux.value) / 100;
+    const years = parseInt(elAnnees.value);
+    const monthlyRate = annualRate / 12;
+
+    let balance = P0;
+    let contributed = P0;
+    const yearly = [{ year:0, balance:P0, contributed:P0 }];
+
+    for(let y=1; y<=years; y++){
+      for(let m=0; m<12; m++){
+        balance = balance * (1 + monthlyRate) + monthly;
+        contributed += monthly;
+      }
+      yearly.push({ year:y, balance, contributed });
+    }
+    return yearly;
+  }
+
+  function drawChart(series){
+    const W = 500, H = 220, padBottom = 24, padTop = 10;
+    const maxVal = Math.max(...series.map(s=>s.balance), 1);
+    const points = series.filter((s,i)=> i % Math.ceil(series.length/12 || 1) === 0 || i === series.length-1);
+    const barW = (W / points.length) * 0.55;
+    const gap = (W / points.length);
+
+    let svg = '';
+    points.forEach((p, i) => {
+      const x = i * gap + (gap - barW)/2;
+      const contribH = (p.contributed / maxVal) * (H - padTop - padBottom);
+      const totalH = (p.balance / maxVal) * (H - padTop - padBottom);
+      const interestH = Math.max(totalH - contribH, 0);
+      const yBase = H - padBottom;
+
+      svg += `<rect x="${x}" y="${yBase - contribH}" width="${barW}" height="${contribH}" fill="var(--gold)" rx="1"></rect>`;
+      svg += `<rect x="${x}" y="${yBase - totalH}" width="${barW}" height="${interestH}" fill="var(--gold-light)" fill-opacity="0.5" rx="1"></rect>`;
+      svg += `<text x="${x + barW/2}" y="${H-6}" font-size="9" fill="var(--grey)" text-anchor="middle" font-family="Inter, sans-serif">${p.year}</text>`;
+    });
+    svg += `<line x1="0" y1="${H-padBottom}" x2="${W}" y2="${H-padBottom}" stroke="var(--line)" stroke-width="1"></line>`;
+    chartSvg.innerHTML = svg;
+  }
+
+  function update(){
+    valMontant.textContent = fmt(elMontant.value);
+    valCotis.textContent = fmt(elCotis.value);
+    valTaux.textContent = parseFloat(elTaux.value).toFixed(1).replace('.', ',') + ' %';
+    valAnnees.textContent = elAnnees.value + ' an' + (elAnnees.value > 1 ? 's' : '');
+
+    const series = computeSeries();
+    const last = series[series.length - 1];
+    resFinal.textContent = fmt(last.balance);
+    resCotise.textContent = fmt(last.contributed);
+    resInterets.textContent = fmt(Math.max(last.balance - last.contributed, 0));
+
+    drawChart(series);
+  }
+
+  [elMontant, elCotis, elTaux, elAnnees].forEach(el => el.addEventListener('input', update));
+  update();
+})();
+</script>
+</body>
+</html>
