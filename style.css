@@ -15,7 +15,7 @@
   body{
     background:var(--black);
     color:var(--cream);
-    font-family:var(--sans);
+    font-family: "Century Gothic", "Avant Garde", Century, sans-serif;
     line-height:1.6;
     overflow-x:hidden;
   }
@@ -85,6 +85,15 @@
   .nav-right{display:flex;align-items:center;gap:20px;flex-shrink:0;}
   .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
   .burger span{width:24px;height:1.5px;background:var(--gold-light);}
+
+  .name{
+    text-align:center;
+    text-transform: uppercase;
+    }
+  /* TAG */
+  .tag{
+    text-align:center;
+  }
 
   /* HERO */
   .hero{
