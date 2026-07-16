@@ -151,7 +151,17 @@
   .side-card h4{font-family:var(--sans);font-size:13.5px;letter-spacing:0.03em;color:var(--gold-light);font-weight:600;margin-bottom:3px;}
   .side-card p{font-size:12.5px;color:var(--grey);}
 
-  /* FOUNDATIONS STRIP */
+  .calc-inputs{
+  background:
+      linear-gradient(90deg, rgba(6,6,4,0.94) 0%, rgba(6,6,4,0.75) 30%, rgba(6,6,4,0.25) 55%, rgba(6,6,4,0.55) 78%, rgba(6,6,4,0.85) 100%),
+      linear-gradient(180deg, rgba(6,6,4,0.55) 0%, rgba(6,6,4,0.1) 22%, rgba(6,6,4,0.15) 70%, rgba(6,6,4,0.85) 100%);
+ }
+ .calc-results{
+  background:
+      linear-gradient(90deg, rgba(6,6,4,0.94) 0%, rgba(6,6,4,0.75) 30%, rgba(6,6,4,0.25) 55%, rgba(6,6,4,0.55) 78%, rgba(6,6,4,0.85) 100%),
+      linear-gradient(180deg, rgba(6,6,4,0.55) 0%, rgba(6,6,4,0.1) 22%, rgba(6,6,4,0.15) 70%, rgba(6,6,4,0.85) 100%);
+ }
+      /* FOUNDATIONS STRIP */
   .foundations{padding:52px 0;border-bottom:1px solid var(--line); background-color: #0a0a08;}
   .foundations .head{text-align:center;font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--grey);margin-bottom:36px;}
   .found-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;}
