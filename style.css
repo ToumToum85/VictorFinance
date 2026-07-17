@@ -252,7 +252,7 @@
   .service-card h3{font-size:24px;color:var(--cream);margin-bottom:10px;}
   .service-card p{font-size:16px;color:var(--grey);margin-bottom:22px;font-weight:300;}
   .service-card .link{font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-light);font-weight:600;}
-
+  .service-card summary{font-size: 20px;}
   /* PROCESS */
   .process{background:var(--charcoal);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;}
