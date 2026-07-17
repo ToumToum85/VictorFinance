@@ -22,7 +22,7 @@
     background-image: url('arbre.1.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.5; /* Ajustez ce chiffre entre 0.0 (invisible) et 1.0 (opaque) */
+    opacity: 0.2; /* Ajustez ce chiffre entre 0.0 (invisible) et 1.0 (opaque) */
     z-index: -1; /* Place l'image derrière tout le contenu */
   }
   .racinetext{
