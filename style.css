@@ -246,11 +246,11 @@
       linear-gradient(90deg, rgba(6,6,4,0.94) 0%, rgba(6,6,4,0.75) 30%, rgba(6,6,4,0.25) 55%, rgba(6,6,4,0.55) 78%, rgba(6,6,4,0.85) 100%),
       linear-gradient(180deg, rgba(6,6,4,0.55) 0%, rgba(6,6,4,0.1) 22%, rgba(6,6,4,0.15) 70%, rgba(6,6,4,0.85) 100%);
   }
-  .service-card:hover{border-color:var(--gold);transform:translateY(-3px);background:rgba(201,162,75,0.04);}
+/*  .service-card:hover{border-color:var(--gold);transform:translateY(-3px);background:rgba(201,162,75,0.04);}*/
   .service-card .ic{color:var(--gold);margin-bottom:20px;}
   .service-card .ic svg{width:30px;height:30px;}
-  .service-card h3{font-size:22px;color:var(--cream);margin-bottom:10px;}
-  .service-card p{font-size:13.5px;color:var(--grey);margin-bottom:22px;font-weight:300;}
+  .service-card h3{font-size:24px;color:var(--cream);margin-bottom:10px;}
+  .service-card p{font-size:16px;color:var(--grey);margin-bottom:22px;font-weight:300;}
   .service-card .link{font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-light);font-weight:600;}
 
   /* PROCESS */
